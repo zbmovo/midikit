@@ -1,0 +1,24 @@
+{
+  "name": "@midikit/midi",
+  "version": "1.0.0",
+  "description": "一个 MIDI file 解析器",
+  "keywords": [
+    "midi",
+    "midi-parser"
+  ],
+  "repository": "git@github.com:zbmovo/midikit.git",
+  "author": "zbmovo <zbmovo@foxmail.com>",
+  "license": "MIT",
+  "unpkg": "./dist/index.min.js",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/types/index.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c & tsc"
+  }
+}

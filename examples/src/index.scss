@@ -1,3 +1,25 @@
-div {
-  font-size: 20px;
+#root {
+  padding: 0 20px;
+  font-size: 14px;
+
+  header {
+    padding: 20px 0;
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 20;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: #1b1b1b;
+      }
+
+      .active {
+        color: green;
+      }
+    }
+  }
 }
