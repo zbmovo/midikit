@@ -1,0 +1,22 @@
+{
+  "eslint.experimental.useFlatConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "json.schemas": [
+    {
+      "fileMatch": [".swcrc", ".swcrc.json"],
+      "url": "https://json.schemastore.org/swcrc.json"
+    },
+    {
+      "fileMatch": [".lintstagedrc", ".lintstagedrc.json"],
+      "url": "https://json.schemastore.org/lintstagedrc.schema.json"
+    },
+    {
+      "fileMatch": [".commitlintrc", ".commitlintrc.json"],
+      "url": "https://json.schemastore.org/commitlintrc.json"
+    },
+    {
+      "fileMatch": [".prettierrc", ".prettierrc.json"],
+      "url": "https://json.schemastore.org/prettierrc.json"
+    }
+  ]
+}
