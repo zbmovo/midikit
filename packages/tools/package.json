@@ -1,0 +1,24 @@
+{
+  "name": "@midikit/tools",
+  "version": "1.0.0",
+  "description": "属于 midikit 的工具包",
+  "keywords": [
+    "midi-tools",
+    "midikit-tools"
+  ],
+  "repository": "git@github.com:zbmovo/midikit.git",
+  "author": "zbmovo <zbmovo@foxmail.com>",
+  "license": "MIT",
+  "unpkg": "./dist/index.min.js",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/types/index.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c & tsc"
+  }
+}
