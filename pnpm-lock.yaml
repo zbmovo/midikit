@@ -74,6 +74,12 @@ importers:
       '@midikit/midi':
         specifier: workspace:^
         version: link:../packages/midi
+      '@midikit/synth':
+        specifier: workspace:^
+        version: link:../packages/synth
+      '@midikit/tools':
+        specifier: workspace:^
+        version: link:../packages/tools
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -104,6 +110,12 @@ importers:
         version: 1.77.0
 
   packages/midi: {}
+
+  packages/synth:
+    dependencies:
+      '@midikit/tools':
+        specifier: workspace:^
+        version: link:../tools
 
   packages/tools: {}
 

@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@midikit/midi": "workspace:^",
+    "@midikit/synth": "workspace:^",
+    "@midikit/tools": "workspace:^",
     "classnames": "^2.5.1",
     "normalize.css": "^8.0.1",
     "react": "^18.3.1",

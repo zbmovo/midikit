@@ -1,0 +1,44 @@
+.piano {
+  display: inline-flex;
+  font-size: 12px;
+  background-color: #000;
+  border-radius: 4px;
+  padding: 10px;
+
+  $width: 60px;
+  $height: 200px;
+
+  .note {
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    // border: 1px solid #2a2d32;
+    border-radius: 0 0 4px 4px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    cursor: pointer;
+    user-select: none;
+    margin: 0 2px;
+
+    &.black {
+      margin-left: calc(($width / 1.5) / -2);
+      margin-right: calc(($width / 1.5) / -2);
+      z-index: 1;
+
+      width: calc($width / 1.5);
+      height: calc($height / 1.5);
+      background-color: #000;
+      color: #fff;
+    }
+
+    &.active {
+      background-color: #e91e63;
+    }
+  }
+}
