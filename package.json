@@ -2,6 +2,8 @@
   "name": "midikit",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://zbmovo.github.io/midikit",
+  "description": "一个 MIDI 音频处理套件",
   "repository": "git@github.com:zbmovo/midikit.git",
   "author": "zbmovo <zbmovo@foxmail.com>",
   "license": "MIT",
