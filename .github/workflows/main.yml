@@ -23,8 +23,8 @@ jobs:
           npm install pnpm -g
           pnpm -v
           pnpm install
+          pnpm -r build
           cd examples
-          pnpm build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
