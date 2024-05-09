@@ -139,6 +139,17 @@ const PlayerExample = () => {
       <p>
         该播放器接受任何 <b>黑乐谱[black midi]</b> 的洗礼！！！
       </p>
+
+      <p>
+        可以去
+        <a
+          href="https://github.com/zbmovo/midikit/tree/main/midifiles"
+          target="_blank"
+        >
+          仓库
+        </a>
+        获取示例文件
+      </p>
       <Upload onFileLoad={onFileLoad} />
       <div className={scss.info}>
         <table>
