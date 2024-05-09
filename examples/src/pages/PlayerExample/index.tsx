@@ -65,10 +65,10 @@ const PlayerExample = () => {
             return master
           },
           envelope: {
-            attack: 0.03,
+            attack: 0.02,
             decay: 0.1,
             sustain: 0.3,
-            release: 0.5,
+            release: 0.3,
           },
         })
 

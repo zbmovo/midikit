@@ -1,4 +1,5 @@
 import { MIDIFile } from "@midikit/midi"
+import workletUrl from "./worklet?worker&url"
 
 interface PlayerOptions {
   endTime: number
@@ -52,7 +53,7 @@ export async function player({
     numberOfChannels,
   })
 
-  await offline.audioWorklet.addModule(new URL("./worklet.ts", import.meta.url))
+  await offline.audioWorklet.addModule(workletUrl)
   const worklet = new AudioWorkletNode(offline, "Transfer")
 
   const compressor = offline.createDynamicsCompressor()
