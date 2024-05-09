@@ -22,7 +22,6 @@ export class Envelope {
   }
 
   triggerRelease(startTime: number) {
-    this.node.setValueAtTime(this.node.value, startTime)
     this.node.linearRampToValueAtTime(0, startTime + this.envelope.release)
   }
 }

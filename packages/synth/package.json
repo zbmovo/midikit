@@ -1,6 +1,6 @@
 {
   "name": "@midikit/synth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个基于 Web Audio 的简易合成器",
   "keywords": [
     "midi-synth",
