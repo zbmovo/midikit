@@ -1,0 +1,46 @@
+.player {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .info {
+    font-size: 18px;
+    font-family: consolas;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    table {
+      tr {
+        td:nth-child(1) {
+          width: 30px;
+          text-align: right;
+          padding-right: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .operate {
+      display: flex;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #f03d3d;
+      &::before {
+        content: "提示: ";
+      }
+    }
+
+    .logger {
+      font-size: 14px;
+      color: green;
+      &::before {
+        content: "日志: ";
+      }
+    }
+  }
+}
