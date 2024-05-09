@@ -5,27 +5,30 @@ import ParserExample from "@/pages/ParserExample"
 import PlayerExample from "@/pages/PlayerExample"
 import SynthExample from "@/pages/SynthExample"
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "parser",
-        element: <ParserExample />,
-      },
-      {
-        path: "player",
-        element: <PlayerExample />,
-      },
-      {
-        path: "synth",
-        element: <SynthExample />,
-      },
-    ],
-  },
-])
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "parser",
+          element: <ParserExample />,
+        },
+        {
+          path: "player",
+          element: <PlayerExample />,
+        },
+        {
+          path: "synth",
+          element: <SynthExample />,
+        },
+      ],
+    },
+  ],
+  { basename: "/midikit" },
+)
