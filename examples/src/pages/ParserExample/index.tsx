@@ -12,7 +12,7 @@ const ParserExample = () => {
   return (
     <div>
       <Upload onFileLoad={onFileLoad}></Upload>
-      <p style={{ textAlign: "center" }}>解析结果请在控制台查看</p>
+      <p>解析结果请在控制台查看</p>
     </div>
   )
 }
